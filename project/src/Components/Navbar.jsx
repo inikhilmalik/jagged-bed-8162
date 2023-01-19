@@ -42,25 +42,12 @@ import {
           borderStyle={'solid'}
           borderColor={useColorModeValue('gray.200', 'gray.900')}
           align={'center'}>
-          <Flex
+          
+          <Flex flex={{ base: 1 }}  h={"65px"} alignItems={"center"} justify={{ base: 'center', md: 'start' }}>
             
-            flex={{ base: 1, md: 'auto' }}
-            ml={{ base: -2 }}
-            display={{ base: 'flex', md: 'none' }}>
-            <IconButton
-              onClick={onToggle}
-              icon={
-                isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
-              }
-              variant={'ghost'}
-              aria-label={'Toggle Navigation'}
-            />
-          </Flex>
-          <Flex flex={{ base: 1 }}  h={"46px"} alignItems={"center"} justify={{ base: 'center', md: 'start' }}>
+            <img style={{margin:"0px 20px 0px 0px"}} width="155px" src={REACTLOGO} alt="logo" />
             
-            <img style={{margin:"0px 20px 0px 0px"}} width="120px" src={REACTLOGO} alt="" />
-            
-           <Input bg={"whitesmoke"} placeholder="Your door to happiness opens with a search"/>
+           <Input bg={"whitesmoke"} placeholder="Your door to happiness opens with a search" borderRadius={"0px"} />
   
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
               <DesktopNav />
@@ -71,7 +58,8 @@ import {
             flex={{ base: 1, md: 0 }}
             justify={'flex-end'}
             direction={'row'}
-            spacing={6}>
+            spacing={6}
+            >
             <Button
               as={'a'}
               fontSize={'sm'}
