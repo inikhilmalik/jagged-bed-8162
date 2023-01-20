@@ -46,6 +46,7 @@ import {
             />
 
           <Image
+            width={"100%"}
             src={image}
             alt="pic"
             roundedTop="lg"
