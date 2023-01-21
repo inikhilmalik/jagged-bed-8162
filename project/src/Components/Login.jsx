@@ -16,13 +16,14 @@ import {
   export default function Login() {
     return (
       <Flex
-        minH={'100vh'}
+        // minH={'100vh'}
         align={'center'}
         justify={'center'}
-        bg={useColorModeValue('gray.50', 'gray.800')}>
-        <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
+        padding={"30px 0pc 60px 0px"}
+        >
+        <Stack spacing={8} mx={'auto'} maxW={'lg'}  >
           <Stack align={'center'}>
-            <Heading fontSize={'4xl'}>Sign in to your account</Heading>
+            <Heading fontSize={'4xl'}>Login to your account</Heading>
             <Text fontSize={'lg'} color={'gray.600'}>
               to enjoy all of our cool <Link color={'blue.400'}>features</Link> ✌️
             </Text>
@@ -30,8 +31,8 @@ import {
           <Box
             rounded={'lg'}
             bg={useColorModeValue('white', 'gray.700')}
-            boxShadow={'lg'}
-            p={8}>
+            // boxShadow={'lg'}
+            p={0}>
             <Stack spacing={4}>
               <FormControl id="email">
                 <FormLabel>Email address</FormLabel>

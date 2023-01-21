@@ -47,7 +47,7 @@ export default function MidSection() {
                     >
                         <Button
                             as={'a'}
-                            _hover={{ color: "brown" }}
+                            _hover={{ color: "brown",borderBottom:"brown" }}
                             fontSize={'sm'}
                             fontWeight={500}
                             variant={'none'}

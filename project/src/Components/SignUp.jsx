@@ -22,12 +22,18 @@ import {
   
     return (
       <Flex
-        minH={'100vh'}
+      
+        // minH={'80vh'}
+        // width={"520px"}
+       
         align={'center'}
         justify={'center'}
-        bg={useColorModeValue('gray.50', 'gray.800')}>
-        <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
-          <Stack align={'center'}>
+        borderRadius={"10px"}
+        paddingTop={"30px"}
+        paddingBottom={"15px"}
+        >
+        <Stack  spacing={0} mx={'auto'}   >
+          <Stack  align={'center'}>
             <Heading fontSize={'4xl'} textAlign={'center'}>
               Sign up
             </Heading>
@@ -38,7 +44,7 @@ import {
           <Box
             rounded={'lg'}
             bg={useColorModeValue('white', 'gray.700')}
-            boxShadow={'lg'}
+            // boxShadow={'lg'}
             p={8}>
             <Stack spacing={4}>
               <HStack>
@@ -88,7 +94,7 @@ import {
               </Stack>
               <Stack pt={6}>
                 <Text align={'center'}>
-                  Already a user? <Link color={'blue.400'}>Login</Link>
+                  Already a user? <Link color={'blue.400'}></Link>
                 </Text>
               </Stack>
             </Stack>
