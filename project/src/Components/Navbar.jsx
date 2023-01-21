@@ -26,6 +26,9 @@ import {
     ChevronDownIcon,
     ChevronRightIcon,
   } from '@chakra-ui/icons';
+import Modals from "./Modals";
+import SignUp from "./SignUp";
+import Login from "./Login";
   
   export default function Navbar() {
     const { isOpen, onToggle } = useDisclosure();
@@ -66,7 +69,7 @@ import {
               fontWeight={400}
               variant={'link'}
               href={'#'}>
-              Help
+              <Modals text="SignUp" comp={<SignUp/>} />
             </Button>
             <Button
               as={'a'}
@@ -74,11 +77,11 @@ import {
               fontWeight={400}
               variant={'link'}
               href={'#'}>
-              Profile
+                <Modals text="Login" comp={<Login/>}  />
             </Button>
             <Button
               as={'a'}
-              fontSize={'sm'}
+              fontSize={'17px'}
               fontWeight={400}
               variant={'link'}
               href={'#'}>
@@ -86,7 +89,7 @@ import {
             </Button>
             <Button
               as={'a'}
-              fontSize={'sm'}
+              fontSize={'17px'}
               fontWeight={400}
               variant={'link'}
               href={'#'}>
